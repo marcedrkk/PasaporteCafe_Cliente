@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F2F2"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGreeting2"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#815F4C"
+                android:fontFamily="@font/bungee"
+                android:paddingBottom="8dp"
+                android:text="¿Que se te apetece hoy?"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:paddingBottom="8dp"
+                android:text="Ofertas del día"
+                android:textColor="#815F4C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0E1CD"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Latte Premium"
+                        android:textColor="#815F4C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="$3.15 (Antes $4.50)"
+                        android:textColor="#FF5722"
+                        android:textColorHighlight="#FFE400"
+                        android:textSize="14sp" />
+
+                    <Button
+                        style="@style/CoffeeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="ver +" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- favoritos -->
+            <TextView
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:paddingBottom="8dp"
+                android:text="Favoritos"
+                android:textColor="#815F4C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0E1CD"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="Espresso Doble"
+                        android:textColor="#815F4C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:paddingBottom="4dp"
+                        android:text="Intenso y aromático"
+                        android:textColor="#815F4C"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:text="$3.00"
+                        android:textColor="#4CAF50"
+                        android:textColorHighlight="#01FF06"
+                        android:textSize="14sp" />
+
+                    <Button
+                        style="@style/CoffeeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="ver +" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- fidelidad beneficio -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:paddingBottom="8dp"
+                android:text="Beneficios"
+                android:textColor="#815F4C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#DBC891"
+                android:fontFamily="@font/bungee"
+                android:padding="12dp"
+                android:text="¡Próxima bebida GRATIS! (6/8)"
+                android:textAlignment="center"
+                android:textColor="#624B35"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

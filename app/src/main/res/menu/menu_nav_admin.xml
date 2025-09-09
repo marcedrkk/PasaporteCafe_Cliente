@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_adminproductos"
+        android:icon="@drawable/admin"
+        android:title="Productos"
+        />
+    <item
+        android:id="@+id/nav_adminsucursales"
+        android:icon="@drawable/gestion"
+        android:title="Sucursales"
+        />
+    <item
+        android:id="@+id/nav_adminclientes"
+        android:icon="@drawable/perfil"
+        android:title="Clientes"
+        />
+    <item
+        android:id="@+id/nav_adminreportes"
+        android:icon="@drawable/gestion"
+        android:title="Reportes"
+        />
+    <item
+        android:id="@+id/nav_adminbeneficios"
+        android:icon="@drawable/gestion"
+        android:title="Beneficios"
+        />
+</menu>

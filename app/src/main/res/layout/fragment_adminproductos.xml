@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DED2BB"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/bungee"
+                android:text="Crear nuevo producto"
+                android:textColor="#815F4C"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- 🧁 Nombre del producto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Nombre del producto"
+                android:textColor="#815F4C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/baloo"
+                android:hint="Ej: Café Vainilla"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#FDC885"
+                android:textColorHint="#FDC885" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Categoría"
+                android:textColor="#815F4C"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#BBDEFB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Descripcion"
+                android:textColor="#815F4C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/baloo"
+                android:hint="Ej: El espresso es una deliciosa forma cremosa concentrada de cafe "
+                android:inputType="numberDecimal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#0D47A1"
+                android:textColorHint="#FDC885" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Precio"
+                android:textColor="#815F4C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/baloo"
+                android:hint="Ej: 2500"
+                android:inputType="numberDecimal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#0D47A1"
+                android:textColorHint="#FDC885" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Imagen del producto"
+                android:textColor="#815F4C"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSeleccionarImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#815F4C"
+                android:fontFamily="@font/bungee"
+                android:text="Seleccionar imagen"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCrearProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#815F4C"
+                android:fontFamily="@font/bungee"
+                android:text="Crear producto"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
